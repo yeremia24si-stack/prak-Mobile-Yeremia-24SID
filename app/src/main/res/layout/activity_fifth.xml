@@ -24,9 +24,9 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false"
         android:padding="24dp"
-        android:clipToPadding="false">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,23 +37,23 @@
                 android:id="@+id/btnWebView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Buka Web Merdeka"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:text="Buka Web Merdeka" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Konten ini sengaja dibuat panjang agar user bisa melakukan scroll pada halaman FifthActivity."
-                android:textSize="16sp"
-                android:layout_marginTop="24dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Ulangi teks ini sampai bawah ya bro biar efek scroll-nya berasa. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                android:textSize="16sp"
                 android:layout_marginTop="24dp"
-                android:paddingBottom="100dp"/>
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Konten ini sengaja dibuat panjang agar user bisa melakukan scroll pada halaman FifthActivity."
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:paddingBottom="100dp"
+                android:text="Ulangi teks ini sampai bawah ya bro biar efek scroll-nya berasa. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                android:textSize="16sp" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

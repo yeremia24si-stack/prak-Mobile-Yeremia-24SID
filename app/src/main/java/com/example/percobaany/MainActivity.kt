@@ -4,11 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.percobaany.Pertemuan_5.FifthActivity
-import com.example.percobaany.pertemuan_2.SecondActivity
+import com.example.percobaany.Home.Pertemuan_5.FifthActivity
+import com.example.percobaany.Home.pertemuan_2.SecondActivity
 import com.example.percobaany.databinding.ActivityMainBinding
-import com.example.percobaany.pertemuan_3.ThirdActivity
-import com.example.percobaany.pertemuan_4.FourthActivity
+import com.example.percobaany.Home.pertemuan_3.ThirdActivity
+import com.example.percobaany.Home.pertemuan_4.FourthActivity
+import com.example.percobaany.Home.pertemuan_7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnKelima.setOnClickListener {
             startActivity(Intent(this, FifthActivity::class.java))
+        }
+
+        binding.btnKeTujuh.setOnClickListener {
+            startActivity(Intent(this, SeventhActivity::class.java))
         }
 
         // =========================

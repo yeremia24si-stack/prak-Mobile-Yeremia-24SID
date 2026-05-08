@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pertemuan_4.FourthActivity">
+    tools:context=".Home.pertemuan_4.FourthActivity">
 
     <Button
         android:id="@+id/btnKembali"
@@ -18,8 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.645" />
 
     <TextView
         android:id="@+id/textView2"
@@ -33,10 +33,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
         android:layout_width="233dp"
         android:layout_height="280dp"
         android:layout_marginTop="244dp"
-        android:backgroundInt="#DB0000"
+        android:backgroundTint="#DB0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -59,7 +60,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Show AlertDialog"
-        app:layout_constraintBottom_toTopOf="@+id/btnKembali"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnShowSnackbar" />

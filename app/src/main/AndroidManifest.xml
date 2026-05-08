@@ -13,35 +13,40 @@
         android:theme="@style/Theme.PercobaanY">
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" />
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".AuthActivity"
             android:exported="false" />
         <activity
-            android:name=".Pertemuan_5.FifthActivity"
+            android:name=".Home.Pertemuan_5.FifthActivity"
             android:exported="false" />
         <activity
-            android:name=".Pertemuan_5.WebViewActivity"
+            android:name=".Home.Pertemuan_5.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_3.ThirdActivity"
+            android:name=".Home.pertemuan_3.ThirdActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_3.ThirdResultActivity"
+            android:name=".Home.pertemuan_3.ThirdResultActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_2.SecondActivity"
+            android:name=".Home.pertemuan_2.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_4.FourthActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".Home.pertemuan_7.SeventhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.pertemuan_4.FourthActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

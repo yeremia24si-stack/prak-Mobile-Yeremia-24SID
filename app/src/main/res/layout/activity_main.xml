@@ -64,7 +64,14 @@
             android:id="@+id/btnKelima"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pertemuan 5 (WEBVIEW)"
+            android:text="Pertemuan 5"
+            app:backgroundTint="#673AB7" />
+
+        <Button
+            android:id="@+id/btnKeTujuh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan 7"
             app:backgroundTint="#673AB7" />
 
         <Button
@@ -74,6 +81,8 @@
             android:text="Logout"
             android:layout_marginTop="10dp"
             android:backgroundTint="#F44336" />
+
+
 
     </LinearLayout>
 
