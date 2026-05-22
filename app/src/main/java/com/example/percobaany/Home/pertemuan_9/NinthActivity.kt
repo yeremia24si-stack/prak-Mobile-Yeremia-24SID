@@ -25,6 +25,7 @@ class NinthActivity : AppCompatActivity() {
             insets
         }
 
+
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
             title = "Pertemuan 9"
