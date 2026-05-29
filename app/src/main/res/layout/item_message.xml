@@ -1,42 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="20dp">
+    android:padding="8dp">
 
     <ImageView
-        android:id="@+id/avatarImg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:contentDescription="Image"
+        android:id="@+id/imgProduct"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
         android:scaleType="centerCrop"
+        android:contentDescription="Product Image"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textSender"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvProductName"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Item Name"
-        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:textSize="13sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/avatarImg"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="nama_product"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textMessage"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvProductPrice"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
-        android:text="Item Desc"
-        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/avatarImg"
-        app:layout_constraintTop_toBottomOf="@+id/textSender" />
+        android:text="harga_product"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

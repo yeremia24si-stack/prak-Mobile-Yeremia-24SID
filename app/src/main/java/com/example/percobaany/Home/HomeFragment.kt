@@ -32,6 +32,13 @@ class HomeFragment : Fragment() {
         activity.supportActionBar?.apply {
             title = "Pertemuan 9"
             setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+            setDisplayHomeAsUpEnabled(false)
+            setDisplayShowHomeEnabled(false)
+        }
+
+        activity.supportActionBar?.apply {
+            title = "Pertemuan 10"
+            setHomeAsUpIndicator(R.drawable.ic_arrow_back)
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
