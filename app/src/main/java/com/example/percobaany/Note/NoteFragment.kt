@@ -39,7 +39,7 @@ class NoteFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_note, container, false)
     }
 
-    fun deleteNote(note: NoteEntity) {}
+    fun deleteNote(note: com.example.percobaany.data.entity.NoteEntity) {}
 
     companion object {
         /**
